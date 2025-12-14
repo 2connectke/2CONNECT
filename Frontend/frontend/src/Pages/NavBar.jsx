@@ -1,9 +1,13 @@
 import "./Home.css";
+import logo from "../assets/logo.jpg"; 
 
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <h1 className="logo">MyProject</h1>
+      <div className="logo-container">
+        <img src={logo} alt="MyProject Logo" className="logo" />
+      </div>
+
       <ul className="nav-links">
         <li>Home</li>
         <li>About</li>
