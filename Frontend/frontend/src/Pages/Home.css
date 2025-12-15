@@ -48,12 +48,91 @@
 
 .content {
   position: relative;
-  color: white;
+  color: rgb(255, 255, 255);
   max-width: 600px;
   margin: auto;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.4);
+  font-weight: bold;
   padding: 30px;
   border-radius: 10px;
+}
+
+.highlight {
+  color: #1e90ff; 
+  font-weight: bold;
+}
+
+.who-we-are {
+  padding: 50px 4%; /* reduced from 100px 10% */
+  background-color: #f9f9f9;
+}
+
+/* Centered section heading */
+.section-title {
+  text-align: center;
+  font-size: 2.2rem; /* slightly smaller */
+  margin-bottom: 40px; /* reduced spacing */
+  color: #1e90ff;
+  font-weight: bold;
+}
+
+/* Two-column layout */
+.who-container {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* slightly smaller gap */
+}
+
+.who-text {
+  flex: 1;
+}
+
+.who-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px; /* tighter spacing */
+}
+
+.who-text p {
+  line-height: 1.6;
+  color: #444;
+}
+
+.who-image {
+  flex: 1;
+}
+
+.who-image img {
+  width: 100%;
+  border-radius: 12px; /* slightly smaller radius */
+  object-fit: cover;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .who-container {
+    flex-direction: column;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+}
+
+.learn-more-btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #1e90ff; /* blue */
+  transform: translateY(-2px);
 }
