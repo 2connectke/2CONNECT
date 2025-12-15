@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import NavBar from "./NavBar";
 import "./Home.css";
 
-const images = [
-  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-  "https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d",
-  "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429",
-  "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-];
+import img1 from "../assets/community.jpg";
+import img2 from "../assets/education.jpg";
+import img3 from "../assets/environment.jpg";
+import img4 from "../assets/healthcare.jpg";
+
+const images = [img1, img2, img3, img4];
 
 export default function Home() {
   const [current, setCurrent] = useState(0);
