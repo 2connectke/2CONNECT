@@ -1,5 +1,5 @@
 import { FaHandsHelping, FaHeartbeat, FaCertificate, FaUniversity, FaGlobe } from "react-icons/fa";
-
+import CountUp from "react-countup";
 
 import { useEffect, useState } from "react";
 import NavBar from "./NavBar";
