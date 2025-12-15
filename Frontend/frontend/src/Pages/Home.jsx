@@ -1,5 +1,8 @@
 import { FaHandsHelping, FaHeartbeat, FaCertificate, FaUniversity, FaGlobe } from "react-icons/fa";
 import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+import { useNavigate } from "react-router-dom";
+import { FaClock, FaMapMarkerAlt } from "react-icons/fa";
 
 import { useEffect, useState } from "react";
 import NavBar from "./NavBar";
@@ -22,6 +25,9 @@ export default function Home() {
 
     return () => clearInterval(interval);
   }, []);
+
+
+  
 
   return (
     <div className="landing-page">
@@ -198,7 +204,18 @@ export default function Home() {
       <h3 className="impact-number">20+</h3>
       <p>Certifications Earned</p>
     </div>
-  </div>
+<div className="impact-card">
+  <div className="impact-icon"><FaClock /></div>
+  <h3 className="impact-number">20+</h3>
+  <p>Hours Served</p>
+</div>
+
+<div className="impact-card">
+  <div className="impact-icon"><FaMapMarkerAlt /></div>
+  <h3 className="impact-number">20+</h3>
+  <p>Communities Reached</p>
+</div>
+</div>
 </section>
 
 
