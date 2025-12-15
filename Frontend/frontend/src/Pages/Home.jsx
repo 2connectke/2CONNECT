@@ -12,8 +12,9 @@ import img1 from "../assets/community.jpg";
 import img2 from "../assets/education.jpg";
 import img3 from "../assets/environment.jpg";
 import img4 from "../assets/healthcare.jpg";
+import img5 from "../assets/SI2CONNECT.jpg"
 
-const images = [img1, img2, img3, img4];
+const images = [img1, img2, img3, img4, img5];
 
 export default function Home() {
   const [current, setCurrent] = useState(0);
@@ -83,7 +84,7 @@ export default function Home() {
 </div>
    
     <div className="who-image">
-      <img src={img1} alt="2Connect community volunteering" />
+      <img src={img5} alt="2Connect community volunteering" />
     </div>
 
   </div>
