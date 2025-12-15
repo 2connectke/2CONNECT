@@ -1,3 +1,6 @@
+import { FaHandsHelping, FaHeartbeat, FaCertificate, FaUniversity, FaGlobe } from "react-icons/fa";
+
+
 import { useEffect, useState } from "react";
 import NavBar from "./NavBar";
 import "./Home.css";
@@ -80,6 +83,99 @@ export default function Home() {
   </div>
 </section>
 
+{/* What we offer */}
+<section className="what-we-offer">
+  <h2 className="section-title">What We Offer</h2>
+
+  <div className="offer-cards">
+
+    {/* Card 1 */}
+    <div className="offer-card">
+      <div className="card-inner">
+        <div className="card-front">
+          <FaHandsHelping className="card-icon" />
+          <h3>500+ Active Opportunities</h3>
+        </div>
+        <div className="card-back">
+          <h4>Volunteer Matching Platform</h4>
+          <p>
+            AI-powered matching connects you with opportunities that fit your skills, interests, and schedule. Find your perfect volunteer role in minutes.
+          </p>
+          <button className="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 2 */}
+    <div className="offer-card">
+      <div className="card-inner">
+        <div className="card-front">
+          <FaHeartbeat className="card-icon" />
+          <h3>Free Wellness Support</h3>
+        </div>
+        <div className="card-back">
+          <h4>Connect+ Wellness</h4>
+          <p>
+            Your mental health matters. Access wellness resources, peer support, and self-care tools designed for young volunteers.
+          </p>
+          <button className="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 3 */}
+    <div className="offer-card">
+      <div className="card-inner">
+        <div className="card-front">
+          <FaCertificate className="card-icon" />
+          <h3>20+ Certifications</h3>
+        </div>
+        <div className="card-back">
+          <h4>Training Academy</h4>
+          <p>
+            Level up your skills with free training programs. From leadership to project management, we've got you covered.
+          </p>
+          <button className="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 4 */}
+    <div className="offer-card">
+      <div className="card-inner">
+        <div className="card-front">
+          <FaUniversity className="card-icon" />
+          <h3>100+ Campus Clubs</h3>
+        </div>
+        <div className="card-back">
+          <h4>Campus Ambassadors</h4>
+          <p>
+            Lead the movement on your campus. Start a 2Connect club and inspire fellow students to take action.
+          </p>
+          <button className="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 5 */}
+    <div className="offer-card">
+      <div className="card-inner">
+        <div className="card-front">
+          <FaGlobe className="card-icon" />
+          <h3>Launching 2025</h3>
+        </div>
+        <div className="card-back">
+          <h4>Global Volunteering</h4>
+          <p>
+            Coming soon: International volunteer experiences. Connect with causes around the world.
+          </p>
+          <button className="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
     </div>
