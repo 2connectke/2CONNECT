@@ -136,3 +136,108 @@
   background-color: #1e90ff; /* blue */
   transform: translateY(-2px);
 }
+
+.what-we-offer {
+  padding: 60px 10%;
+  background-color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #1e90ff;
+}
+
+.offer-cards {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.offer-card {
+  width: 200px;
+  height: 280px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.offer-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.card-front {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+.card-back {
+  background-color: #f9f9f9;
+  color: #333;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.card-back .card-icon {
+  display: none; /* icon only on front */
+}
+
+.learn-more-btn {
+  margin-top: 15px;
+  padding: 8px 18px;
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #0d6efd;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .offer-card {
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-cards {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
