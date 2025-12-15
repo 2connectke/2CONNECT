@@ -218,11 +218,64 @@ export default function Home() {
 </div>
 </section>
 
-
-
+{/* Footer */}
+<footer className="site-footer">
+  <div className="footer-container">
+    {/* Left Section */}
+    <div className="footer-left">
+      <div className="footer-logo">
+        <span className="heart-icon"></span> <span className="logo-text">2Connect</span>
+      </div>
+      <p>
+        Building a movement of young Kenyan changemakers. Your action, your impact. 
+        Join thousands of volunteers transforming communities across Kenya.
+      </p>
+      <div className="social-icons">
+        <a href="#"><i className="fab fa-instagram"></i>📷</a>
+        <a href="#"><i className="fab fa-twitter"></i>🐦</a>
+        <a href="#"><i className="fab fa-linkedin"></i>🔗</a>
+        <a href="#"><i className="fab fa-youtube"></i>▶️</a>
+      </div>
     </div>
 
+    {/* Middle Sections */}
+    <div className="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li onClick={() => navigate("/")}>Home</li>
+        <li onClick={() => navigate("/opportunities")}>Opportunities</li>
+        <li onClick={() => navigate("/events")}>Events</li>
+        <li onClick={() => navigate("/partners")}>Partners</li>
+        <li onClick={() => navigate("/resources")}>Resources</li>
+      </ul>
+    </div>
 
+    <div className="footer-section">
+      <h4>Programs</h4>
+      <ul>
+        <li>Volunteer Matching</li>
+        <li>Connect+</li>
+        <li>Training Academy</li>
+        <li>Campus Ambassadors</li>
+        <li>Global Volunteering</li>
+      </ul>
+    </div>
+
+    <div className="footer-section">
+      <h4>Support</h4>
+      <ul>
+        <li>FAQ</li>
+        <li>Contact Us</li>
+        <li>Privacy Policy</li>
+        <li>Terms of Service</li>
+        <li>Press Kit</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+</div>
    
 
 
