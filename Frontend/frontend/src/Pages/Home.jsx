@@ -177,6 +177,31 @@ export default function Home() {
   </div>
 </section>
 
+<section className="our-impact">
+  <h2 className="section-title">Our Impact</h2>
+
+  <div className="impact-cards">
+    <div className="impact-card">
+      <div className="impact-icon">⭐</div>
+      <h3 className="impact-number">500+</h3>
+      <p>Active Volunteer Opportunities</p>
+    </div>
+
+    <div className="impact-card">
+      <div className="impact-icon">🌍</div>
+      <h3 className="impact-number">100+</h3>
+      <p>Campus Clubs</p>
+    </div>
+
+    <div className="impact-card">
+      <div className="impact-icon">🎓</div>
+      <h3 className="impact-number">20+</h3>
+      <p>Certifications Earned</p>
+    </div>
+  </div>
+</section>
+
+
 
     </div>
 
