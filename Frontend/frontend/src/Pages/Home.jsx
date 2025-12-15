@@ -31,10 +31,10 @@ export default function Home() {
         <div className="overlay" />
 
         <div className="content">
-          <h2>Welcome to My Project</h2>
+          <h2></h2>
           <p>
-            This homepage uses a background image carousel with a simple
-            explanation layered on top.
+            Connect with meaningful volunteer opportunities. Build skills. 
+            Transform communities. Be the change you want to see.
           </p>
         </div>
       </div>
